@@ -35,21 +35,21 @@ typeof(c(1, 4, 6))  # "double"
 
 typeof(c(1, "dogs"))  # "character"
 
-# Write a function `CompareLength` that takes in 2 vectors, and returns the sentence:
+# Write a function `compare_length` that takes in 2 vectors, and returns the sentence:
 # "The difference in lengths is N"
-CompareLength <- function(v1, v2) {
+compare_length <- function(v1, v2) {
   diff <- abs(length(v1) - length(v2))
   diff_string <- paste('The difference in lengths is', diff)
   return(diff_string)
 }  
 
 # Pass two vectors of different length to your `CompareLength` function
-CompareLength(c(1,2,3), 1:100)
+compare_length(c(1,2,3), 1:100)
 
-# Write a function `DescribeDifference` that will return one of the following statements:
+# Write a function `describe_difference` that will return one of the following statements:
 # "Your first vector is longer by N elements"
 # "Your second vector is longer by N elements"
-DescribeDifference <- function(a,b) {
+describe_difference <- function(a,b) {
   diff <- length(a) - length(b)
   if(diff > 0) {
     sentence <- paste('Your first vector is longer by', diff, 'elements')
@@ -60,21 +60,21 @@ DescribeDifference <- function(a,b) {
 }
 
 # Pass two vectors to your `DescribeDifference` function
-DescribeDifference(1:15, 9:17)
+describe_difference(1:15, 9:17)
 
 
-# Write a function `CombineVectors` that takes in 3 vectors and combines them into one
-CombineVectors <- function(v1, v2, v3) {
+# Write a function `combine_vectors` that takes in 3 vectors and combines them into one
+combine_vectors <- function(v1, v2, v3) {
   return(c(v1, v2, v3))
 }
 
 # Send 3 vectors to your function to test it.
-CombineVectors(c("Birds ", "of ", "a "), c("feather "), c("flock ", "together"))
+combine_vectors(c("Birds ", "of ", "a "), c("feather "), c("flock ", "together"))
 
-# Write a function `CapsTime` that takes in a vector of names of courses you're taking, ex "Informatics 201" and removes all capital letters
+# Write a function `caps_time` that takes in a vector of names of courses you're taking, ex "Informatics 201" and removes all capital letters
 
-CapsTime <- function(courses) {
+caps_time <- function(courses) {
   return(gsub("[A-Z]","", courses))
 }
 
-CapsTime(c("Informatics", "Bioethics", "Artifical Intelligence"))
+caps_time(c("Informatics", "Bioethics", "Artifical Intelligence"))
