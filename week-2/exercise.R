@@ -30,23 +30,23 @@ said_the_famous <- paste(my_line, " - ", initial)
 
 # Make a vector and use typeof to check what type R considers it to be
 
-# Write a function `CompareLength` that takes in 2 vectors, and returns the sentence:
+# Write a function `compare_length` that takes in 2 vectors, and returns the sentence:
 # "The difference in lengths is N"
 
 
-# Pass two vectors of different length to your `CompareLength` function
+# Pass two vectors of different length to your `compare_length` function
 
 
-# Write a function `DescribeDifference` that will return one of the following statements:
+# Write a function `describe_difference` that will return one of the following statements:
 # "Your first vector is longer by N elements"
 # "Your second vector is longer by N elements"
 
-# Pass two vectors to your `DescribeDifference` function
+# Pass two vectors to your `describe_difference` function
 
 
-# Write a function `CombineVectors` that takes in 3 vectors and combines them into one
+# Write a function `combine_vectors` that takes in 3 vectors and combines them into one
 
 # Send 3 vectors to your function to test it.
 
-# Write a function `CapsTime` that takes in a vector of names of courses you're taking, ex "Informatics 201" and removes all capital letters
+# Write a function `caps_time` that takes in a vector of names of courses you're taking, ex "Informatics 201" and removes all capital letters
 
